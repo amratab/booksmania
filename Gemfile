@@ -42,6 +42,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'stripe'
 gem 'httparty'
 gem "koala"
+gem 'rspec-rails', group: :test
 
 ruby "2.1.3"
 # Use ActiveModel has_secure_password
