@@ -5,7 +5,8 @@ env:
   - DB=postgresql
 script: 
   - RAILS_ENV=test bundle exec rake db:create db:migrate --trace
-  - bundle exec rspec spec/
+  - gem install rspec
+  - bundle exec rspec test/
 before_script:
   - mysql -e 'create database books_test'
 bundler_args: --binstubs=./bundler_stubs
